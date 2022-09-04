@@ -1,0 +1,9 @@
+/*-- Carousels --*/
+.carousel-caption-custom-index {
+    @include position(auto, 18%, 18%, auto);
+}
+
+.carousel-caption-custom-index2 {
+    @include position(auto, 16%, auto, 17%);
+    width: 32%;
+}

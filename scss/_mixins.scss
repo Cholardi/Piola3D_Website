@@ -1,0 +1,13 @@
+@mixin position ($bottom, $top, $left, $right){
+    bottom: $bottom;
+    top: $top;
+    left: $left;
+    right: $right;
+}
+
+@mixin table ($text-align, $padding, $border){
+    text-align: $text-align;
+    padding: $padding;
+    border: $border;
+    border-collapse: collapse;
+}

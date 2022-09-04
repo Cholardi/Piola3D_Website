@@ -1,0 +1,65 @@
+/* -- Info Grid -- */
+.info_section_1 {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 6fr 4fr;
+    align-items: center;
+
+    grid-template-areas:
+    "caratula_img caratula_img"
+    "explicacion explicacion"
+    "descripcion_videito descripcion_videito"
+    "videito videito"
+    ;
+}
+
+.img_printing_info_container {
+    grid-area: caratula_img;
+}
+
+.bloque_que_es_imp3d {
+    grid-area: explicacion;
+}
+
+.titulito_videito {
+    grid-area: descripcion_videito;
+}
+
+.videitos {
+    grid-area: videito;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* -- media queries -- */
+@media screen and (min-width: 992px){
+    .info_section_1{
+        grid-template-areas: 
+        "caratula_img caratula_img"
+        "explicacion descripcion_videito"
+        "explicacion videito"
+        ;
+    }
+
+    .bloque_que_es_imp3d {
+        height: 92%;
+        padding: 80px !important;
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        font-size: 1.2em;
+    }
+    
+    .titulito_videito,.videitos {
+        padding-right: 30px;
+    }
+    
+    .videitos {
+        margin-bottom: 25px;
+    }
+}

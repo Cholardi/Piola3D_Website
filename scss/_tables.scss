@@ -1,0 +1,10 @@
+/* tabla */
+.tabla_mat td,
+.tabla_mat th,
+.tabla_mat {
+    @include table (center, 10px, $border1)
+}
+
+.tabla_mat {
+    width: 100%;
+}

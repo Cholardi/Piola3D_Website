@@ -1,0 +1,24 @@
+/* -- Animations -- */
+a{
+    transition-duration: .2s;
+    transition-timing-function: ease;
+}
+
+.animate {
+    animation-name: agrandar;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+
+@keyframes agrandar {
+
+    0% {
+        opacity: 0;
+        transform: scale(.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

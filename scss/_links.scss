@@ -1,0 +1,27 @@
+/* -- Social links -- */
+$social_link:(
+    instagram: rgb(255, 166, 0),
+    facebook: rgb(0, 140, 255),
+    whatsapp: rgb(75, 228, 29),
+);
+
+@each $red,$color in $social_link {
+    .bi-#{$red}:hover{
+        color: $color;
+    }   
+}
+
+.bi{
+    transition-duration: .2s;
+    transition-timing-function: ease;
+}
+
+/* -- Text links -- */
+.text_link {
+    color: $casiblanco;
+
+    &:hover {
+        color: white;
+    }
+}
+
