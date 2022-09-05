@@ -25,45 +25,6 @@
   .text_link:hover, .paso_cierre:hover {
     color: white; }
 
-/* -- Animations -- */
-a {
-  transition-duration: .2s;
-  transition-timing-function: ease; }
-
-.animate {
-  animation-name: agrandar;
-  animation-duration: 1.5s;
-  animation-timing-function: ease; }
-
-@keyframes agrandar {
-  0% {
-    opacity: 0;
-    transform: scale(0.2); }
-  100% {
-    opacity: 1;
-    transform: scale(1); } }
-
-/*-- Carousels --*/
-.carousel-caption-custom-index {
-  bottom: auto;
-  top: 18%;
-  left: 18%;
-  right: auto; }
-
-.carousel-caption-custom-index2 {
-  bottom: auto;
-  top: 16%;
-  left: auto;
-  right: 17%;
-  width: 32%; }
-
-/* -- Clases fondo --*/
-.bg-oscuro-custom {
-  background-color: #171717; }
-
-.bg-semioscuro-custom {
-  background-color: #353535; }
-
 /* -- Clases texto -- */
 .custom_h1_title {
   font-size: calc(2rem + 2.5vw); }
@@ -103,6 +64,59 @@ h3 {
   font-size: 1.6rem;
   font-weight: 600; }
 
+@media screen and (min-width: 992px) {
+  .centrado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .bloque_titulo {
+    background-color: #171717c0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; } }
+
+/* -- Animations -- */
+a {
+  transition-duration: .2s;
+  transition-timing-function: ease; }
+
+.animate {
+  animation-name: agrandar;
+  animation-duration: 1.5s;
+  animation-timing-function: ease; }
+
+@keyframes agrandar {
+  0% {
+    opacity: 0;
+    transform: scale(0.2); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
+/*-- Carousels --*/
+.carousel-caption-custom-index {
+  bottom: auto;
+  top: 18%;
+  left: 18%;
+  right: auto; }
+
+.carousel-caption-custom-index2 {
+  bottom: auto;
+  top: 16%;
+  left: auto;
+  right: 17%;
+  width: 32%; }
+
+/* -- Clases fondo --*/
+.bg-oscuro-custom {
+  background-color: #171717; }
+
+.bg-semioscuro-custom {
+  background-color: #353535; }
+
 /* tabla */
 .tabla_mat td,
 .tabla_mat th,
@@ -140,7 +154,7 @@ h3 {
   align-items: center; }
 
 /* -- media queries -- */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .info_section_1 {
     grid-template-areas: "caratula_img caratula_img" "explicacion descripcion_videito" "explicacion videito"; }
   .bloque_que_es_imp3d {
