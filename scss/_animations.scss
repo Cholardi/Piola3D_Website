@@ -1,8 +1,4 @@
-/* -- Animations -- */
-a{
-    transition-duration: .2s;
-    transition-timing-function: ease;
-}
+/* -- ANIMATIONS -- */
 
 .animate_agrandar {
     animation-name: agrandar;
@@ -59,4 +55,52 @@ a{
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+/* -- TRANSITIONS -- */
+
+a{
+    transition-duration: .2s;
+    transition-timing-function: ease;
+}
+
+/* -- Social links -- */
+$social_link:(
+    instagram: rgb(255, 166, 0),
+    facebook: rgb(0, 140, 255),
+    whatsapp: rgb(75, 228, 29),
+);
+
+@each $red, $color in $social_link {
+    .bi-#{$red}:hover{
+        color: $color;
+    }   
+}
+
+.bi{
+    transition-duration: .2s;
+    transition-timing-function: ease;
+}
+
+/* -- Text links -- */
+.text_link_claro {
+    @include text_link ($casiblanco, white);
+}
+
+.text_link_oscuro {
+    @include text_link ($fondo_semioscuro, black);
+}
+
+/* -- Image links -- */
+.img_link {
+    transition-duration: .5s;
+    transition-timing-function: ease;
+
+    &:hover{
+        transform: scale(1.08);
+    }
+}
+
+.img_wrapper{
+    overflow: hidden;
 }

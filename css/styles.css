@@ -9,31 +9,6 @@
 .btn:hover {
   transform: scale(1.05); }
 
-/* -- Social links -- */
-.bi-instagram:hover {
-  color: #ffa600; }
-
-.bi-facebook:hover {
-  color: #008cff; }
-
-.bi-whatsapp:hover {
-  color: #4be41d; }
-
-.bi {
-  transition-duration: .2s;
-  transition-timing-function: ease; }
-
-/* -- Text links -- */
-.text_link_claro, .paso_cierre {
-  color: #dfdfdf; }
-  .text_link_claro:hover, .paso_cierre:hover {
-    color: white; }
-
-.text_link_oscuro {
-  color: #353535; }
-  .text_link_oscuro:hover {
-    color: black; }
-
 /* -- Clases texto -- */
 * {
   font-family: 'Lato', sans-serif; }
@@ -94,11 +69,7 @@ h3 {
     width: 100%;
     height: 100%; } }
 
-/* -- Animations -- */
-a {
-  transition-duration: .2s;
-  transition-timing-function: ease; }
-
+/* -- ANIMATIONS -- */
 .animate_agrandar {
   animation-name: agrandar;
   animation-duration: 1.5s;
@@ -140,6 +111,46 @@ a {
   100% {
     opacity: 1;
     transform: translateX(0); } }
+
+/* -- TRANSITIONS -- */
+a {
+  transition-duration: .2s;
+  transition-timing-function: ease; }
+
+/* -- Social links -- */
+.bi-instagram:hover {
+  color: #ffa600; }
+
+.bi-facebook:hover {
+  color: #008cff; }
+
+.bi-whatsapp:hover {
+  color: #4be41d; }
+
+.bi {
+  transition-duration: .2s;
+  transition-timing-function: ease; }
+
+/* -- Text links -- */
+.text_link_claro, .paso_cierre {
+  color: #dfdfdf; }
+  .text_link_claro:hover, .paso_cierre:hover {
+    color: white; }
+
+.text_link_oscuro {
+  color: #353535; }
+  .text_link_oscuro:hover {
+    color: black; }
+
+/* -- Image links -- */
+.img_link {
+  transition-duration: .5s;
+  transition-timing-function: ease; }
+  .img_link:hover {
+    transform: scale(1.08); }
+
+.img_wrapper {
+  overflow: hidden; }
 
 /*-- Carousels --*/
 .carousel-caption-custom-index {
