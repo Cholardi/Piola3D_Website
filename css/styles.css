@@ -1,6 +1,10 @@
 /* -- Buttons -- */
-.btn_custom_size {
+.btn_custom_big {
   font-size: 2vw; }
+
+.btn_custom_mid {
+  font-size: 1.5rem;
+  padding: 1rem; }
 
 .btn:hover {
   transform: scale(1.05); }
@@ -20,10 +24,15 @@
   transition-timing-function: ease; }
 
 /* -- Text links -- */
-.text_link, .paso_cierre {
+.text_link_claro, .paso_cierre {
   color: #dfdfdf; }
-  .text_link:hover, .paso_cierre:hover {
+  .text_link_claro:hover, .paso_cierre:hover {
     color: white; }
+
+.text_link_oscuro {
+  color: #353535; }
+  .text_link_oscuro:hover {
+    color: black; }
 
 /* -- Clases texto -- */
 * {
@@ -63,6 +72,10 @@ p span {
 h3 {
   font-size: 1.5rem; }
 
+.precio_prod {
+  font-size: 50px;
+  margin-bottom: .5rem; }
+
 .paso_cierre {
   font-size: 1.6rem;
   font-weight: 600; }
@@ -86,10 +99,23 @@ a {
   transition-duration: .2s;
   transition-timing-function: ease; }
 
-.animate {
+.animate_agrandar {
   animation-name: agrandar;
   animation-duration: 1.5s;
   animation-timing-function: ease; }
+
+.animate_slidein_ltr {
+  animation-name: slide_in_ltr;
+  animation-duration: 1s;
+  animation-timing-function: ease; }
+
+.animate_slidein_rtl {
+  animation-name: slide_in_rtl;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: .5s;
+  transform: translateX(80vw);
+  animation-fill-mode: forwards; }
 
 @keyframes agrandar {
   0% {
@@ -98,6 +124,22 @@ a {
   100% {
     opacity: 1;
     transform: scale(1); } }
+
+@keyframes slide_in_ltr {
+  0% {
+    opacity: 0;
+    transform: translateX(-80vw); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes slide_in_rtl {
+  0% {
+    opacity: 0;
+    transform: translateX(80vw); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
 
 /*-- Carousels --*/
 .carousel-caption-custom-index {

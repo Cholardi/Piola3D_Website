@@ -11,3 +11,11 @@
     border: $border;
     border-collapse: collapse;
 }
+
+@mixin text_link ($color_base, $color_end){
+    color: $color_base;
+
+    &:hover{
+        color: $color_end;
+    }
+}

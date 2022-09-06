@@ -17,11 +17,11 @@ $social_link:(
 }
 
 /* -- Text links -- */
-.text_link {
-    color: $casiblanco;
+.text_link_claro {
+    @include text_link ($casiblanco, white);
+}
 
-    &:hover {
-        color: white;
-    }
+.text_link_oscuro {
+    @include text_link ($fondo_semioscuro, black);
 }
 

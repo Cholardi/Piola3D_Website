@@ -7,6 +7,7 @@
 h1, h2, h3, h4, h5, h6{
     font-weight: 700;
 }
+
 .custom_h1_title {
     font-size: calc(2rem + 2.5vw);
 }
@@ -48,8 +49,13 @@ h3 {
     font-size: 1.5rem;
 }
 
+.precio_prod {
+    font-size: 50px;
+    margin-bottom: .5rem;
+}
+
 .paso_cierre {
-    @extend .text_link;
+    @extend .text_link_claro;
     font-size: 1.6rem;
     font-weight: 600;
 }

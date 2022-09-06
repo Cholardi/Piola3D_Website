@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Iconos Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <!-- Estilo CSS Reset -->
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <!-- Estilo CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- Estilo CSS Propio -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+
+    <!-- Keywords -->
+    <meta name="keywords"
+        content="Piola3D, Piola 3D, Impresión 3d, 3d printing, Impresión 3d argentina, Impresión 3d buenos aires, Impresión 3d caba, Argentina, Buenos Aires, CABA, Modelos, 3D, STL, Filamento, Productos, Personajes, Star Wars, Harry Potter, Batman, Juguete, Muñeco, Regalo, Réplica">
+
+    <!-- Description -->
+    <meta name="description"
+        content="Piola3D comprá los productos -personajes, modelos a escala, juguetes, réplicas y mucho más- hechos en impresión 3d.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../imgs/favicon.ico" type="image/x-icon">
+
+    <!-- Title -->
+    <title>Piola3D | Productos: Catálogo de Productos</title>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Menú de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-oscuro-custom">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo" src="../imgs/piola_icono.png" alt="Icono Piola3D">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav nav-fill w-100">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        <a class="nav-link active" href="productos.html">Productos</a>
+                        <a class="nav-link" href="servicio_impresion.html">Servicio de Impresión 3D</a>
+                        <a class="nav-link" href="otros_servicios.html">Otros Servicios</a>
+                        <a class="nav-link" href="info.html">Información</a>
+                        <a class="nav-link" href="galeria.html">Galería</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="bg-semioscuro-custom">
+        <section class="text-white">
+            <div class="text-center p-5">
+                <h1 class="animate_slidein_ltr custom_h1_title">Productos</h1>
+                <p class="animate_slidein_rtl custom_h1_subtitle">Mirá nuestro catálogo de productos.</p>
+            </div>
+        </section>
+
+        <!-- Cards Productos -->
+        <section class="album container-fluid px-5 pb-5">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 g-4">
+                <div class="col">
+                    <div class="card text-center h-100">
+                        <img src="../imgs/productos/tirith.jpg" class="card-img-top" alt="Minas Tirith">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                            <h3 class="card-title"><a class="text_link_oscuro" href="">Minas Tirith</a></h3>
+                            <p class="precio_prod">$2800</p>
+                            <a href="pages/otros_servicios.html" class="btn btn-dark btn_custom_mid">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center h-100">
+                        <img src="../imgs/productos/grogu.jpg" class="card-img-top" alt="Grogu - Baby Yoda">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                            <h3 class="card-title"><a class="text_link_oscuro" href="">Grogu - Baby Yoda</a></h3>
+                            <p class="precio_prod">$1800</p>
+                            <a href="pages/servicio_impresion.html" class="btn btn-dark btn_custom_mid">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center h-100">
+                        <img src="../imgs/mando.jpg" class="card-img-top" alt="The Mandalorian">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                            <h3 class="card-title"><a class="text_link_oscuro" href="">The Mandalorian</a></h3>
+                            <p class="precio_prod">$2000</p>
+                            <a href="pages/productos.html" class="btn btn-dark btn_custom_mid">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center h-100">
+                        <img src="../imgs/productos/darthvader.jpg" class="card-img-top" alt="Darth Vader">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                            <h3 class="card-title"><a class="text_link_oscuro" href="">Darth Vader</a></h3>
+                            <p class="precio_prod">$2200</p>
+                            <a href="pages/productos.html" class="btn btn-dark btn_custom_mid">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center h-100">
+                        <img src="../imgs/productos/millennium.jpg" class="card-img-top" alt="Millennium Falcon">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                            <h3 class="card-title"><a class="text_link_oscuro" href="">Millennium Falcon</a></h3>
+                            <p class="precio_prod">$3100</p>
+                            <a href="pages/productos.html" class="btn btn-dark btn_custom_mid">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center h-100">
+                        <img src="../imgs/productos/dumbledore.jpg" class="card-img-top" alt="Dumbledore">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                            <h3 class="card-title"><a class="text_link_oscuro" href="">Dumbledore</a></h3>
+                            <p class="precio_prod">$1600</p>
+                            <a href="pages/productos.html" class="btn btn-dark btn_custom_mid">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center h-100">
+                        <img src="../imgs/productos/batman.jpg" class="card-img-top" alt="Batman">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                            <h3 class="card-title"><a class="text_link_oscuro" href="">Batman</a></h3>
+                            <p class="precio_prod">$1800</p>
+                            <a href="pages/productos.html" class="btn btn-dark btn_custom_mid">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center h-100">
+                        <img src="../imgs/productos/laberinto.jpg" class="card-img-top" alt="Laberinto Cilíndrico">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                            <h3 class="card-title"><a class="text_link_oscuro" href="">Laberinto Cilíndrico</a></h3>
+                            <p class="precio_prod">$1000</p>
+                            <a href="pages/productos.html" class="btn btn-dark btn_custom_mid">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <section class="container-fluid footer-dark bg-oscuro-custom">
+        <footer class="d-flex flex-column flex-md-row justify-content-around align-items-center py-3">
+            <div class="d-flex align-items-center text-center">
+                <p class="mb-2 mb-md-0 text-muted">&copy; 2022 Piola3D. Todos los derechos reservados.</p>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-center list-unstyled d-flex justify-content-md-end">
+                <li class="mx-3">
+                    <a class="text-muted" href="https://www.instagram.com/piola3d/" target="_blank">
+                        <i class="bi bi-instagram h4"></i>
+                    </a>
+                </li>
+                <li class="mx-3">
+                    <a class="text-muted" href="https://www.instagram.com/piola3d/" target="_blank">
+                        <i class="bi bi-facebook h4"></i>
+                    </a>
+                </li>
+                <li class="mx-3">
+                    <a class="text-muted" href="https://www.instagram.com/piola3d/" target="_blank">
+                        <i class="bi bi-whatsapp h4"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </section>
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
